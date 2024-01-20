@@ -1,4 +1,4 @@
-# arduino-uno-midi-input
+# Arduino Uno Midi Input
 
 This is a report on using MIDI input with Arduino Uno. As I had MIDI female ports laying around for my synth I want to build I tested them out and wanted to know what capabilities & possibilities from Arduino in combination with MIDI emerge.
 
@@ -7,7 +7,7 @@ So you can use this as:
 - example code
 - Do's and Don'ts
 
-Please be aware that I just searched around the web and there may be issues with the hardware setup, but this worked for me, so for you probably to.
+Please be aware that I just searched around the web and there may be issues with the hardware setup, but this worked for me, so for you it works probably too.
 
 ### Bill of material (BOM)
 - **Arduino Uno**
@@ -37,12 +37,14 @@ And obviously, if you want to try it out, you need:
 
 
 
-
-
 ### Hardware setup
 
 <img src="./images/breadboard.png">
 
+<img src="./images/IMG_20240120_161758.jpg">
+For more images look at the image folder.
+
+As you see, I 3D-printed a small case for the socket using old screws and a cardboard pipe.
 
 
 ### Code setup
