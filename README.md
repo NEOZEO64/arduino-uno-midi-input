@@ -47,10 +47,6 @@ For more images look at the image folder.
 As you see, I 3D-printed a small case for the socket using old screws and a cardboard pipe.
 
 
-### Code setup
-- install the standard arduino midi library
-  (https://www.arduino.cc/reference/en/libraries/midi-library/)
-
 
 ### Do's and don'ts when using MIDI
 - Do not use delays when receiving MIDI messages (that makes them corrupt or you ignore messages during the delay)
@@ -59,10 +55,13 @@ As you see, I 3D-printed a small case for the socket using old screws and a card
 - **It doesn't support multiple notes on currently!** Send only one note on per time!
 
 
-## Code Examples
+## Software
 
+### Code setup
+- install the standard arduino midi library from the integrated IDE menu
+  (https://www.arduino.cc/reference/en/libraries/midi-library/)
 
-### Arduino Code (Midi -> Serial)
+### Arduino Code Example 1 (Midi -> Serial)
 ```c++
 #include <SoftwareSerial.h>
 #include <MIDI.h>
@@ -97,7 +96,7 @@ void loop() {
 }
 
 ```
-### Arduino Code (Midi -> Neopixel Effect)
+### Arduino Code Example 2 (Midi -> Neopixel Effect)
 
 ```c++
 #include <SoftwareSerial.h>
@@ -174,6 +173,4 @@ void loop() {
     }
   }
 }
-
-
 ```
