@@ -9,6 +9,8 @@ So you can use this as:
 
 Please be aware that I just searched around the web and there may be issues with the hardware setup, but this worked for me, so for you it works probably too.
 
+---
+
 ### Bill of material (BOM)
 - **Arduino Uno**
 - Breadboard, Jumper, USB Cable etc. (experimenting equipment)
@@ -26,6 +28,8 @@ And obviously, if you want to try it out, you need:
 - MIDI cable
 - MIDI-enabled device like a drum sequencer (I use a Beatstep Pro) or keyboard
 
+---
+
 ### Sources
 
 - Errors on MIDI input using 6N137 (most info)
@@ -35,7 +39,15 @@ And obviously, if you want to try it out, you need:
 - Midi protocol tutorial
   https://www.amazona.de/workshop-das-midi-datenformat-einfach-erklaert/
 
+---
 
+### Do's and don'ts when using MIDI
+- Do not use delays when receiving MIDI messages (that makes them corrupt or you ignore messages during the delay)
+- Probably keep the circuit small and tight to avoid unwanted interferences with high speed MIDI messages
+- If you want to use an alternative opto coupler, read the datasheet and decide if your opto coupler switches faster than 4us or something like that
+- **It doesn't support multiple notes on currently!** Send only one note on per time!
+  
+---
 
 ### Hardware setup
 
@@ -48,12 +60,7 @@ As you see, I 3D-printed a small case for the socket using old screws and a card
 
 
 
-### Do's and don'ts when using MIDI
-- Do not use delays when receiving MIDI messages (that makes them corrupt or you ignore messages during the delay)
-- Probably keep the circuit small and tight to avoid unwanted interferences with high speed MIDI messages
-- If you want to use an alternative opto coupler, read the datasheet and decide if your opto coupler switches faster than 4us or something like that
-- **It doesn't support multiple notes on currently!** Send only one note on per time!
-
+---
 
 ## Software
 
